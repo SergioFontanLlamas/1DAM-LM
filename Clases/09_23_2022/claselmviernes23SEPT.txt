@@ -1,0 +1,50 @@
+Etiquetas: Son la base del HTML
+
+- Etiqueta de apertura y de cierre
+
+ETIQUETA DE APERTURA
+<NOMBRE DE LA ETIQUETA>
+
+ETIQUETA DE CIERRE
+</NOMBRE DE LA ETIQUETA>
+
+Ejemplo:
+<etiqueta>CONTENIDO</etiqueta>
+<p></p> ---> Escribe parrafos
+
+<p>HOLA ME LLAMO SERGIO</p>
+
+Tipos de etiquetas:
+- html ---> raiz del fichero
+- head ---> estilos o css
+- body ---> lo que se ve en
+	    mi web (esqueleto)
+
+DENTRO DEL BODY:
+- <p> ----> parrafo
+- <em> ----> cursiva
+- <strong> ----> texto en negrita
+- <a> ----> crea un enlace 
+	   (IMPORTANTE href 
+	   para indicar lugar de caida)
+
+ETIQUETAS DE TITULO:
+<hx> 1, 2, 3, 4, 5, 6
+<h1></h1>
+<h2></h2>
+...
+<h6></h6>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
