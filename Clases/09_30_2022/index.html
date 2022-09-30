@@ -1,45 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Clase 30 septiembre</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <a href="prueba/otracosa.html"><li>Otracosa fichero</li></a>
+            </ul>
+        </nav>
+        <main>
+            <!-- Inicio de tabla normal -->
+            <table id="1">
+                <!-- Cabecera de tabla  -->
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>edad</th>
+                        <th>dni</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de tabla  -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sergio</td>
+                        <td>Fontan</td>
+                        <td>18</td>
+                        <td>456</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Claudia</td>
+                        <td>Lopez</td>
+                        <td>20</td>
+                        <td>789</td>
+                    </tr>
+                </tbody>
+                <!-- Pie de tabla -->
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>edad</th>
+                        <th>dni</th>
+                    </tr>
+                </tfoot>
+            </table>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+            <!-- Tabla con rowspan y colspan -->
+            <!-- <table id="2">
+                <thead>
+                    <tr>
+                        <th colspan="2">id</th>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>edad</th>
+                        <th>dni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sergio</td>
+                        <td rowspan="2">Fontan</td>
+                        <td>18</td>
+                        <td>456</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Claudia</td>
+                        <td>Lopez</td>
+                        <td>20</td>
+                        <td>789</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table> -->
 
-<body>
-    <ul>
-        <li> América </li>
-        <ul>
-            <li>América central </li>
-            <li>América sur </li>
-            <li>América norte </li>
-        </ul>
-        <li> África </li>
-        <ol>
-            <li> África Septentrional </li>
-            <li>África Occidental </li>
-            <li> África Central </li>
-            <li>África Oriental </li>
-            <li>África Meridional </li>
-            <ol>
-                <li> África Septentrional </li>
-                <li>África Occidental </li>
-                <li> África Central </li>
-                <li>África Oriental </li>
-                <li>África Meridional </li>
-            </ol>
-        </ol>
-        <li>Antártida </li>
-        <ul>
-            <li>Antártida oriental </li>
-            <li>Antártida occidental </li>
-        </ul>
-        <li>Asia </li>
-        <li> Europa </li>
-        <li>Oceania </li>
-    </ul>
-</body>
-
+            <!-- Tabla de modulos -->
+            <table id="3">
+                <!-- Cabecera de tabla  -->
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>curso</th>
+                        <th>descripcion</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de tabla  -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bases de datos</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Almacenamiento de la información</li>
+                                <li>Bases de datos relacionales</li>
+                                <li>Realización de consultas</li>
+                                <li>Tratamiento de datos</li>
+                                <li>Programación de bases de datos</li>
+                                <li>Interpretación de diagramas entidad/relación</li>
+                                <li>Uso de bases de datos objeto-relacionales</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Entornos de desarrollo</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Desarrollo de software</li>
+                                <li>Instalación y uso de entornos de desarrollo</li>
+                                <li>Diseño y realización de pruebas</li>
+                                <li>Optimización y documentación</li>
+                                <li>Introducción al lenguaje unificado de modelado (UML)</li>
+                                <li>Elaboración de diagramas de clases</li>
+                                <li>Elaboración de diagramas de comportamiento</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Formacion y Orientacion laboral</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Orientación profesional y búsqueda activa de empleo</li>
+                                <li>Gestión del conflicto y equipos de trabajo</li>
+                                <li>Contrato de trabajo y relaciones laborales</li>
+                                <li>Seguridad Social, empleo y desempleo</li>
+                                <li>Conceptos básicos sobre seguridad y salud en el trabajo</li>
+                                <li>Evaluación de riesgos profesionales. Riesgos generales y riesgos específicos</li>
+                                <li>Aplicación de medidas de prevención y protección en la empresa</li>
+                                <li>Planificación de la prevención de riesgos en la empresa</li>
+                                <li>Primeros auxilios</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lenguajes de Marcas y Sistemas de Gestion de Informacion</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Reconocimiento de las características de lenguajes de marcas</li>
+                                <li>Lenguajes para la visualización de información</li>
+                                <li>Lenguajes para el almacenamiento y transmisión de información</li>
+                                <li>Definición de esquemas y vocabularios en XML</li>
+                                <li>Conversión y adaptación de documentos XML</li>
+                                <li>Almacenamiento de información</li>
+                                <li>Aplicación de los lenguajes de marcas a la sindicación de contenidos</li>
+                                <li>Sistemas de gestión empresarial</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Programacion</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Introducción a la programación</li>
+                                <li>Introducción a la orientación a objetos</li>
+                                <li>Identificación de los elementos de un programa informático</li>
+                                <li>Utilización de objetos</li>
+                                <li>Uso de estructuras de control</li>
+                                <li>Desarrollo de clases</li>
+                                <li> Aplicación de las estructuras de almacenamiento</li>
+                                <li>Utilización avanzada de clases</li>
+                                <li>Control y manejo de excepciones</li>
+                                <li>Colecciones de datos</li>
+                                <li>Lectura y escritura de información</li>
+                                <li>Gestión de bases de datos relacionales</li>
+                                <li>Mantenimiento de la persistencia de los objetos</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Sistemas Informáticos</td>
+                        <td>1</td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li>Explotación de Sistemas Microinformáticos</li>
+                                <li>Instalación de Sistemas Operativos</li>
+                                <li>Gestión de la información</li>
+                                <li>Configuración de sistemas operativos</li>
+                                <li>Conexión de sistemas en red</li>
+                                <li>Gestión de recursos en una red</li>
+                                <li>Explotación de aplicaciones informáticas de propósito general</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <ol type="1" start="1">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+                <!-- Pie de tabla -->
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>curso</th>
+                        <th>descripcion</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </body>
 </html>
