@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- El CSS contiene SELECTORES y los selectores contienen REGLAS
+
+            p{
+                color: green;
+            }
+
+            En el ejemplo de arriba:
+            - p es un selector que hace referencia a una etiqueta p.
+            - color es una regla que contiene el valor "green".
+            - Este selector aplica el color verde sobre todas las etiquetas p
+        -->
+
+        <!-- Para crear selectores, tengo que saber sobre donde los voy a aplicar. Existen tres opciones:
+        1. Aplicar sobre etiqueta. En este caso ponemos el nombre de la etiqueta y las que consideremos.
+        p{
+            color: green;
+        }
+
+        2. Aplicar sobre clase. En este caso ponemos un punto y el nombre de la clase para colocar dentro las reglas.
+        .feo{
+            color:yellow;
+        }
+
+        3. Aplicar sobre id. En este caso ponemos simbolo almohadilla y el nombre del id al que hace referencia y colocamos
+        las reglas dentro.
+        #genial{
+            color:red;
+        } -->
+
+        <!-- Para aplicar el css desde la etiqueta style necesito distinguir tres maneras distintas:
+        1. Aplicar a una ETIQUETA: ponemos el nombre de la etiqueta y metemos la REGLA que aplico 
+        2. Aplicar a una CLASE: creo una clase que va a contener unas REGLAS y las pongo en las etiquetas
+        donde lo quiera aplicar.
+        3. Aplicar sobre un ID: creo un id con nombre UNICO y creo un selector con las reglas para ese ID
+        -->
+        <style>
+            p{
+                color: green;
+            }
+
+            .bonito{
+                color:darkorange;
+                font-size: xx-large;
+                background-color: aqua;
+            }
+
+            .feo{
+                color:yellow;
+            }
+
+            #genial{
+                color:red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Para colocar codigo css necesito poner un atributo style que tenga como contenido
+        una REGLA de css.
+        En este caso, la regla es "color" porque quiero cambiar el color. 
+        style="color:brown"  
+    -->
+        <p class="feo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p class="bonito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p class="feo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p class="bonito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p class="feo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p id="genial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+        <p class="bonito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis nisi sapiente perspiciatis sequi odio eius incidunt commodi quam dolores sint ducimus molestias, dolore veniam ab fugit numquam quos laborum.</p>
+    </body>
+</html>
