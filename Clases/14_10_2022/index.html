@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 OCTUBRE</title>
+
+    <!-- Todo lo que esta dentro la etiqueta style es codigo CSS -->
+    <style>
+        * {
+            background-color: darkcyan;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            color: green;
+            padding-left: 0px;
+        }
+
+        #parrafo {
+            color: blue;
+            padding-left: 5px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .parrafo {
+            color: red;
+            padding: 5px;
+            margin: 15px;
+            border: 5px black double;
+        }
+
+        table{
+            border: 15px yellow dotted;
+        }
+
+        th{
+            border: 5px black double;
+        }
+
+        td{
+            border: 2px black solid;
+        }
+
+        li{
+            list-style: none;
+            display: inline-block;
+            border: 2px black solid;
+            padding: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+            background-color: antiquewhite;
+        }
+
+        ul{
+            background-color: black;
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        a{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+
+<!-- 
+    Propiedades de margenes y espaciados:
+    - border-color: VALOR ---- aplica un color sobre un borde
+    - border-width: VALOR ---- aplica el ancho sobre un borde
+    - border-style: VALOR ---- aplica el tipo de borde 
+    - border: border-width border-color border-style ---- aplica las tres anteriores juntas 
+
+    - margin: VALOR ---- aplica un espacio sobre el borde del elemento hacia fuera
+    - padding: VALOR ---- aplica un espacio entre el contenido de la etiqueta y su borde
+
+    Las propiedades margin y padding tienen en comun lo siguiente:
+    - TOP hace referencia a la parte superior (margin-top y padding-top)
+    - BOTTOM hace referencia a la parte inferior (margin-bottom y padding-bottom)
+    - LEFT hace referencia a la parte izquierda (margin-left y padding-left)
+    - RIGHT hace referencia a la parte derecha (margin-right y padding-right)
+
+    Para maquetar correctamente el <nav> utilizo las siguientes propiedades:
+        SOBRE EL <li> UTILIZAMOS: 
+            list-style: none; --- le quita el punto a la lista
+            display: inline-block; ---- coloca paralelamente los elementos
+
+-->
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>CONTENIDO</p>
+        <p class="parrafo">CONTENIDO</p>
+        <p id="parrafo">CONTENIDO</p>
+    
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+    </main>
+    
+</body>
+
+</html>
