@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Seleccionar todos los elementos que tienen clase y colocar color azul */
+        [class]{
+            color:blue;
+        }
+
+        /* Selecciono el elemento que tiene clase "uno" */
+        [class = "uno"]{
+            color: black;
+        }
+        [href="imf.com"]{
+            background-color: aqua;
+        }
+        [href="google.com"]{
+            padding: 500px;
+        }
+
+        /* Seleccionamos elementos con class="2" y con href="google.com" */
+        .dos[href="google.com"]{
+            font-size: large;
+        }
+
+        /* Seleccionamos elementos con etiqueta <nav> y con class="a" */
+        nav.a{
+            color:brown;
+        }
+
+        /* Seleccionamos elementos con etiqueta <li> y con class="a" */
+        li.a{
+            color: green;
+        }
+
+        /* Seleccionamos elementos con id="unico" que tengan class="d" */
+        #unico.d{
+            color:red;
+        }
+
+        /* Seleccionarmos elemento con class="o" que sea <li> y es dentro de <ol> y a su vez dentro de <nav> */
+        nav ol li[class="o"]{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectores con atributos</h1>
+    <!--
+        1. [nombre_atributo]: seleccionamos los elementos que tienen nombre_atributo.
+        2. [nombre_atributo = valor]: seleccionamos los elementos que tengan valor en nombre_atributo
+        3. .clase[nombre_atributo = valor]: seleccionar los elementos que tengan .class con atributo nombre_valor con contenido valor
+        4. etiqueta.clase: seleccionar las etiquetas que tengan esa .class
+        5. #id.class: selccionar la etiqueta que tenga ese id en concreto y esa clase en concreto (o las dos o nada).
+        6. etiqueta_1 etiqueta_2 etiqueta_3 [class="valor"]: selecciona la <etiqueta_3> que tiene class="valor" y esta 
+            contenida dentro de <etiqueta_2> y a su vez dentro de <etiqueta_1>
+    -->
+    <a class="uno">Uno</a>
+    <a class="dos" href="imf.com">IMF</a>
+    <a class="dos" href="google.com">IMF</a>
+    <p class="uno">Hola</p>
+    
+    <nav class="a">
+        <ul>
+            <li class="a">1</li>
+            <li class="b">2</li>
+            <li class="c">3</li>
+            <li id="unico" class="e">4</li>
+        </ul>
+        <ol>
+            <li class="y">asduhasu</li>
+            <li class="o">asdohsa</li>
+        </ol>
+    </nav>
+    <footer>
+        <ol>
+            <li>asduhasu</li>
+            <li>asdohsa</li>
+        </ol>
+    </footer>
+</body>
+</html>
