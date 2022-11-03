@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            padding: 10px;
+            /* border-radius: 50%;*/
+            border-radius: 5% 30% 10% 50%;
+            /* border-radius: top-left top-right bottom-right bottom-left; */
+        }
+
+        #img-imf{
+            filter: brightness(90%);
+            filter: contrast(200%);
+            filter: sepia(30%);
+        }
+        p {
+            text-decoration-line: underline;
+            text-decoration-color: rgb(126, 230, 126);
+        }
+    </style>
+    <!-- 
+        Linea de codigo que me proporciona el icono en la pestaña del navegador
+        1. Debe ser con extension .ico para asegurarnos que funciona
+        2. Convertir online la imagen deseada en .ico https://imagen.online-convert.com/es/convertir-a-ico
+    -->
+    <link rel="icon" type="image/x-icon" href="imf.ico">
+</head>
+<body>
+    <label>
+        Bases de Datos
+        <input
+            type="text"
+            list="unidades-bd">
+
+            <datalist id="unidades-bd">
+                <option value="ER">Entidad-Relacion</option>
+                <option value="MR">Modelo relacional</option>
+                <option value="BD">Creacion base de datos</option>
+                <option value="MBD">Modificacion base de datos</option>
+                <option value="CBD">Consultas base de datos</option>
+            </datalist>
+    </label>
+
+    <button class="btn">Enviar</button>
+
+    <br>
+    <img id ="img-imf" src="img/imf.png">
+
+    <p>Eugenia quiere irse ya</p>
+</body>
+</html>
