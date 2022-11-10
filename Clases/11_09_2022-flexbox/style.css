@@ -1,0 +1,64 @@
+/* Mi etiqueta main va a ser mi flex-container */
+/* Cuando pongo display:flex activo el flexbox */
+main{
+    display: flex;
+    border: 1px solid black;
+    height: 100%;
+
+    /* gap es la propiedad que proporciona espacio entre mis flex-items.
+    En este caso genera espacio de 5px entre mis etiquetas
+    section */
+    gap: 5px;
+
+    /* justify-content es la propiedad que alinea los elementos sobre el 
+    eje principal*/
+    justify-content: center;
+
+    /* align-items es la propiedad que alinea los elementos sobre el eje
+    transversal */
+    align-items: center;
+
+    /* flex-wrap es la propiedad que coloca los flex-items en una 
+    o mas lineas */
+    flex-wrap: wrap;
+}
+
+/* Mis etiquetas section son mis flex-items */
+section{
+    border: 1px solid blue;
+    /* la propiedad flex-basis especifica un tamaño inicial de mi
+    flex-item (sustituye al width) */
+    flex-basis: 100px;
+    height: 150px;
+    /* width: 100px; */
+}
+
+section[class="uno"]{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#img{
+    height: 60px;
+    width: 60px;
+}
+
+section[class="uno"] h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section[class="section-div"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section[class="section-div"] div{
+    flex-basis: 40px;
+    height: 40px;
+    border: 1px solid grey;
+}
