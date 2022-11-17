@@ -1,0 +1,164 @@
+body{
+    margin:0;
+}
+
+main div{
+    width: 69vw;
+    background-color: blanchedalmond;
+}
+
+main aside{
+    width: 30vw;
+    background-color: aqua;
+}
+
+main div img[src="usuario.png"]{
+    width: 30vw;
+}
+
+section{
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+header{
+    height: 20vh;
+    border: 1px solid grey;
+}
+
+footer{
+    height: 10vh;
+    border: 1px solid red;
+}
+
+/* Pantalla de movil */
+@media screen and (max-width: 480px){
+    /* Selectores que se activan cuando la pantalla es menor a 480px */
+    main{
+        background-color: blue;
+    }
+    section{
+        width: 100vw;
+        height: 30vh;
+        border: 1px solid black;
+    }
+    main div{
+        width: 100vw;
+    }
+    main aside{
+        width: 100vw;
+    }
+    main div img[src="usuario.png"]{
+        /* width: 100vw; */
+        display:none;
+    }
+}
+
+/* Pantalla de tablet */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* Selectores que se activan cuando la pantalla es menor a 768px  
+    y mayor a 481px */
+    main{
+        background-color: greenyellow;
+    }
+}
+
+/* Pantalla de portatil */
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    /* Selectores que se activan cuando la pantalla es menor a 1279px  
+    y mayor a 789px */
+    main{
+        background-color: brown;
+    }
+}
+
+/* Pantalla de pc */
+@media screen and (min-width: 1280px){
+    /* Selectores que se activan cuando la pantalla es mayor a 1280px */
+    main{
+        background-color: rgb(255, 0, 200);
+    }
+}
+
+
+/* 
+    PSEUDOCLASES Y PSEUDOELEMENTOS 
+    La pseudoclase define un estado especial de un elemento
+    El pseudoelemento define un estilo especial en una parte de un elemento
+*/
+
+header ul{
+    width: 100vw;
+    background-color: chocolate;
+    padding: 5px;
+}
+
+header ul li{
+    background-color: beige;
+    padding: 6px;
+    list-style: none;
+    display:inline-block;
+}
+
+/*
+    :hover se utiliza cuando paso el cursor por encima de un elemento
+*/
+header ul li:hover{
+    background-color: rgba(245, 245, 220, 0.715);
+}
+
+main div img[src="usuario.png"]:hover{
+    /* display:none; */
+}
+
+/*
+    :link se utiliza cuando no he visistado un enlace
+*/
+main div section a[href="https://imfsmartcampus.imf.com/ultra/institution-page"]:link{
+    color:red;
+}
+
+/*
+    :visited se utiliza cuando SI he visitado un enlace
+*/
+main div section a[href="https://imfsmartcampus.imf.com/ultra/institution-page"]:visited{
+    color:green;
+}
+
+/* 
+    :active se utiliza para el enlace activo en este momento
+*/
+main div section a[href="https://imfsmartcampus.imf.com/ultra/institution-page"]:active{
+    color:green;
+}
+
+/*
+    Elementos child
+    Realizan un tratamiento especifico de los elementos hijo
+
+    :first-child realiza un tratamiento sobre el primer elemento hijo
+    :last-child realiza un tratamiento sobre el ultimo elemento hijo
+    :nth-child(n) realiza un tratamiento sobre el elemento en la posicion n
+*/
+main div section:first-child{
+    width: 50vw;
+}
+
+main div section:last-child{
+    width: 50vw;
+}
+
+main div section:nth-child(2n-1){
+    background-color: rgb(164, 160, 160);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+
+        /*
+            Simbolo > hijos directos de [...]
+            Simbolo ~ todos los elementos que van despues de [...]
+            Simbolo + primer elemento que va despues de [...]
+
+            Restricciones:
+            - El simbolo > es más restrictivo que ~
+            - El simbolo + es más menos restrictivo que el simbolo >
+        */
+        .contenedor > p{
+            color:blue;
+        }
+
+        div ~ p{
+            color:red;
+        }
+
+        div + p{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h3>Título de mi página</h3>
+        <div>
+            <p>Primer párrafo</p>
+        </div>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+        <p>Cuarto párrafo</p>
+    </div>
+    <p>Quinto párrafo</p>
+</body>
+</html>
