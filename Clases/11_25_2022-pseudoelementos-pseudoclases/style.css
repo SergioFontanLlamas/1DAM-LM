@@ -1,0 +1,92 @@
+/*
+    PSEUDOCLASES
+    :focus
+    :enabled
+    :disabled
+    :checked
+    :read-only
+    :required
+*/
+
+/* Actua sobre la opcion de mi select que este desactivada */
+form select option:disabled{
+    background-color: red;
+    color:white;
+}
+/* Actua sobre la opcion de mi select que esta activado */
+form select option:enabled{
+    background-color: green;
+    color:white;
+}
+
+form select option:hover{
+    background-color: brown;
+}
+
+/* Actua sobre cualquier input que tenga el focus */
+form input:focus{
+    border: 5px solid red;
+}
+
+/* Actua sobre un checbox o radio si esta seleccionado */
+form input[type="checkbox"]:checked{
+    display: none;
+}
+form input[type="radio"]:checked{
+    display: none;
+}
+
+/* Actua sobre un input de contenido obligatorio */
+form input:required{
+    background-color: red;
+    color:white;
+}
+
+/* 
+    PSEUDOELEMENTOS 
+    ::first-line    Se utiliza para agregar estilo a la primera linea
+    ::first-letter  Se utiliza para agregar estilo a la primera letra
+    ::selection     Se utiliza para agregar estilo a una parte seleccionada.
+    ::after         Se utiliza para agregar contenido DESPUES de un elemento. 
+                    Se debe utilizar la propiedad content("") para especificar dicho contenido.
+    ::before        Se utiliza para agregar contenido ANTES de un elemento. 
+                    Se debe utilizar la propiedad content("") para especificar dicho contenido.
+    ::placeholder   Se utiliza para agregar estilo al texto de un atributo placeholder
+*/
+
+/* Actua sobre la primera letra de mi etiqueta <p> */
+p::first-letter{
+    font-size: 20px;
+    color:blue;
+}
+
+/* Actua sobre la primera linea de mi etiqueta <p> */
+p::first-line{
+    color:yellow;
+}
+
+/* Actua sobre la porcion de texto seleccionada de mi etiqueta <p>*/
+p::selection{
+    color: orange;
+}
+
+/* Actua al principio de mie tiqueta p */
+p::before{
+    content: "HOLA";
+    color:chocolate;
+}
+
+/* Actua al final de mi etiqueta p */
+p::after{
+    content: "ADIOS";
+    color:chocolate;
+}
+
+/* Actua sobre todo input que tenga un placeholder */
+input::placeholder{
+    color:red;
+}
+
+input:required::placeholder{
+    color:coral;
+}

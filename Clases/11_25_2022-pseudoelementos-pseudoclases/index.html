@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--
+        checked:    selecciona el elemento (radio, checkbox)
+        required:   elemento de contenido obligatorio antes de enviar el formulario
+        disabled:   desactivar el elemento (no puedo interaccionar con el)
+        readonly:   lee el elemento pero no lo envia
+        autofocus:  pone el foco en dicho elemento
+    -->
+    <form method="" action="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maxime deserunt soluta dolor et numquam quis rem quia repellendus, placeat odio voluptas ipsa perspiciatis alias consectetur, aut reiciendis obcaecati? Animi?</p>
+        <input type="checkbox" checked>
+        <input type="radio" checked>
+        <input type="checkbox">
+        <input type="radio">
+        <input type="text" placeholder="Escribe tu nombre" required>
+        <input type="text" placeholder="Escribe tu apellidos">
+        <input type="email" placeholder="Escribe tu email" autofocus>
+        <input type="password" placeholder="Escribe tu password">
+        <select>
+            <option readonly>Escoge una opcion</option>
+            <option value="1">Opcion1</option>
+            <option value="2" default disabled>Opcion2</option>
+            <option value="3">Opcion3</option>
+            <option value="4">Opcion4</option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+</html>
