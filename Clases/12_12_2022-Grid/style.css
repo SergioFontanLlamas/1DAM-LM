@@ -1,0 +1,85 @@
+/* 
+    PROPIEDADES CONTENEDOR PADRE
+    grid-template-columns: establece el numero de columnas de mi grid
+    Al ponerle auto auto crea dos columnas de igual tamaño
+
+    grid-template-rows: establece el numero de filas de mi grid
+    Al ponerle auto auto crea dos filas de igual tamaño
+
+    PROPIEDADES CONTENEDOR HIJO
+    grid-column: indica cuantas columnas tiene el elemento
+    para ajustar las columnas, puedo poner un inicio y un fin.
+
+    grid-row: indica cuantas filas tiene el elemento
+    para ajustar las filas, puedo poner un inicio y un fin.
+
+    grid-column-start: establece donde inicia el elemento en columna
+    ejemplo: grid-row-start: 3;
+
+    grid-column-end: establece donde finaliza el elemento en columna
+    ejemplo: grid-row-end:4;
+
+    grid-row-start: establece donde inicia el elemento en fila
+    ejemplo: grid-row-start: 3;
+
+    grid-row-end: establece donde finaliza el elemento en fila
+    ejemplo: grid-row-end:4;
+    */
+body{
+    margin:0;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.caja{
+    /* width: 50px;
+    height: 50px; */
+
+    background-color:aqua;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.caja2{
+    background-color: burlywood;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.caja3{
+    background-color:darkcyan;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+
+@media screen and (max-width: 800px){
+    .caja{
+        /* width: 50px;
+        height: 50px; */
+    
+        background-color:aqua;
+        grid-column: 5/6; /* inicio/fin */
+        grid-row: 4/5;
+
+    }
+
+    .caja2{
+        background-color: burlywood;
+        grid-column: 4 / span 3; /* inicio/cuantos_avanza */
+        grid-row: 1 / span 3;
+    }
+
+    main{
+        grid-template-columns: repeat(16, auto); /* repeat(a,b) siendo a el numero de veces y b el tamaño */
+        grid-template-rows: repeat(16, auto);
+    }
+}
