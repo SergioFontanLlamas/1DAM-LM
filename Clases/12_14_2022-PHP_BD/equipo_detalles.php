@@ -29,7 +29,9 @@
      * 
      */
 
-     function getJugadores(){
+     $id = $_GET['id'];
+
+     function getEquipos($id){
         /**
          * La variable $conexion contiene la configuracion de la conexion a la base de datos NBA con usuario root, 
          * contraseña vacia y ubicacion en localhost
@@ -39,7 +41,7 @@
         /**
          * La variable $sql contiene la query que voy a realizar en mi base de datos
         */
-        $sql = "SELECT * FROM jugadores";
+        $sql = "SELECT * FROM equipos WHERE id = " . $id;
 
         return $conexion->query($sql);
      }
@@ -56,12 +58,12 @@
     //     echo $fila['nombre'] . '<br>';
     // }
 
-        function tablaJugadores(){
+        function tablaEquipos($id){
             /**
              * Realizamos la query con la sentencia $sql sobre la configuracion de la $conexion.
             * Almaceno en $resultado el retorno de la query
             */
-            $resultado = getJugadores();
+            $resultado = getEquipos($id);
             /**
              * Por cada iteracion del bucle (por cada $fila) genero una fila en la tabla (tr con td).
              */
@@ -69,14 +71,9 @@
                 echo '<tr>';
                     echo '<td class="dato">'. $fila['id'] . '</td>';
                     echo '<td class="dato">'. $fila['nombre'] . '</td>';
-                    echo '<td class="dato">'. $fila['procedencia'] . '</td>';
-                    echo '<td class="dato">'. $fila['altura'] . '</td>';
-                    echo '<td class="dato">'. $fila['peso'] . '</td>';
-                    echo '<td class="dato">
-                            <a href="equipo_detalles.php?id='. $fila['equipo_id'] . '">' .
-                                'ver'.
-                            '</a>' .
-                        '</td>';
+                    echo '<td class="dato">'. $fila['ciudad'] . '</td>';
+                    echo '<td class="dato">'. $fila['conferencia'] . '</td>';
+                    echo '<td class="dato">'. $fila['division'] . '</td>';
                 echo '</tr>';
             }
         }
@@ -102,15 +99,14 @@
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Procedencia</th>
-                <th>Altura</th>
-                <th>Peso</th>
-                <th>Equipo</th>
+                <th>Ciudad</th>
+                <th>Conferencia</th>
+                <th>Division</th>
             </tr>
         </thead>
         <tbody>
             <?php
-               tablaJugadores();
+               tablaEquipos($id);
             ?>
         </tbody>
     </table>
