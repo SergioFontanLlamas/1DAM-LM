@@ -57,6 +57,7 @@
 <body>
     <h1>HOLA SOY PHP </h1>
     <a href="jugadores.php">Jugadores NBA</a>
+    <a href="equipos.php">Equipos NBA</a>
     <h2> MI PERSONAJE FAVORITO ES <?php echo $personajes['personaje5']['nombre'] . ' ' . $personajes['personaje5']['apellido'] ?> pero el mas fuerte es <?php echo $personajes['personaje1']?></h2>
 
     <?php
