@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- IMPORTAR LIBRERIA DE BOOTSTRAP. Version 5.2.3 -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <style>
+        .borde{
+            border: 1px solid black;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Tenemos una fila con cuatro columnas del mismo tamaño.</h1>
+        <p> La clase <strong>container</strong> es un contenedor donde puedo introducir cosas </p>
+        <p>Cada columna tiene la clase <strong>col</strong></p>
+        <p> La clase row crea una fila. 
+            Se activa el grid system dentro de ella
+            Existen 12 columnas dentro del row</p> 
+
+        <div class="row text-center">
+            <div class="col borde">
+                Column
+            </div>
+            <div class="col borde">
+                Column
+            </div>
+            <div class="col borde">
+                Column
+            </div>
+            <div class="col borde">
+                Column
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Tenemos una fila con columnas de distinto tamaño</h1>
+        <p>Cada columna tiene la clase <strong>col-X</strong>, siendo X un valor entre 1 y 12</p>
+        <p>Si me paso de 12 columnas dentro del row, las coloca debajo</p>
+        <p>Es posible definir el tamaño de cada columna en funcion del ancho de pantalla</p>
+        <p><strong>sm</strong>(small), <strong>md</strong>(medium), <strong>lg</strong>(large)</p>
+        <div class="row text-center">
+            <div class="col-12 col-md-6 col-lg-5 borde bg-secondary">
+                Column
+            </div>
+            <div class="col-2 borde bg-secondary">
+                Column
+            </div>
+            <div class="col-6 borde bg-secondary">
+                Column
+            </div>
+            <div class="col-12 borde bg-secondary">
+                Column
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Colores TEXTO</h1>
+        <p>Para el texto, se define de la siguiente manera: <strong>text-TIPO</strong></p>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="border text-primary">.text-primary</p>
+                <p class="border text-secondary">.text-secondary</p>
+                <p class="border text-success">.text-success</p>
+                <p class="border text-danger">.text-danger</p>
+                <p class="border text-warning">.text-warning</p>
+                <p class="border text-info">.text-info</p>
+                <p class="border text-light">.text-light</p>
+                <p class="border text-dark">.text-dark</p>
+                <p class="border text-body">.text-body</p>
+                <p class="border text-muted">.text-muted</p>
+                <p class="border text-white">.text-white</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Colores FONDO</h1>
+        <p>Para el fondo, se define de la siguiente manera: <strong>bg-TIPO</strong></p>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="border bg-primary">.bg-primary</p>
+                <p class="border bg-secondary">.bg-secondary</p>
+                <p class="border bg-success">.bg-success</p>
+                <p class="border bg-danger">.bg-danger</p>
+                <p class="border bg-warning">.bg-warning</p>
+                <p class="border bg-info">.bg-info</p>
+                <p class="border bg-light">.bg-light</p>
+                <p class="border bg-dark">.bg-dark</p>
+                <p class="border bg-white">.bg-white</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Tablas</h1>
+        <p>Para agregar estilo de Bootstrap a la tabla, debo agregar la clase <strong>table</strong> a la etiqueta table</p>
+        <p>Existen distintos tipos de estilos para las tablas. En este caso utilizamos <strong>table-striped</strong> para crear una tabla con colores distintos en filas pares e impares</p>
+        <div class="row">
+            <div class="col-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-primary">
+                            <th class="text-white">1</th>
+                            <td class="text-white">Mark</td>
+                            <td class="text-white">Otto</td>
+                            <td class="text-white">@mdo</td>
+                            <td class="text-white">@twitter</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Larry the Bird</td>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@twitter</td>
+                          </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Botones</h1>
+        <p>Para agregar estilo en los botones, necesito agregar la clase <strong>btn</strong> al boton correspondiente</p>
+        <p>A partir de ahi, puedo agregar clases con los colores de Bootstrap de la siguiente manera <strong>btn-TIPO</strong></p>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <br><br>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-secondary">Secondary</a>
+                <a href="#" class="btn btn-success">Success</a>
+                <a href="#" class="btn btn-danger">Danger</a>
+                <a href="#" class="btn btn-warning">Warning</a>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-light">Light</a>
+                <a href="#" class="btn btn-dark">Dark</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Card</h1>
+        <p>Para agregar estilo en las cards, necesito agregar la clase <strong>card</strong> al div correspondiente</p>
+        <div class="row">
+            <div class="col-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://imfsmartcampus.imf.com/branding/_1_1/loginLogo/CustomLoginLogo.svg?m=ktvep3ic" class="card-img-top" alt="...">
+                    <div class="card-body bg-secondary">
+                      <h5 class="card-title text-white">Card title</h5>
+                      <p class="card-text text-warning">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://imfsmartcampus.imf.com/branding/_1_1/loginLogo/CustomLoginLogo.svg?m=ktvep3ic" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://imfsmartcampus.imf.com/branding/_1_1/loginLogo/CustomLoginLogo.svg?m=ktvep3ic" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://imfsmartcampus.imf.com/branding/_1_1/loginLogo/CustomLoginLogo.svg?m=ktvep3ic" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://imfsmartcampus.imf.com/branding/_1_1/loginLogo/CustomLoginLogo.svg?m=ktvep3ic" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
